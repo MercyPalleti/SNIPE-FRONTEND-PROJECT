@@ -1,3 +1,15 @@
+SCREEN SHOTS
+1.LOGIN PAGE:
+<img width="1920" height="1080" alt="Screenshot (309)" src="https://github.com/user-attachments/assets/8d9f4c18-fe52-45fe-9b4e-b3d24a9739d5" />
+
+2.DASHBOARD:
+<img width="1920" height="1080" alt="Screenshot (310)" src="https://github.com/user-attachments/assets/f7327eaf-54dc-4bd8-bd16-ab4f230b096e" />
+
+3.Shipment Details Page
+<img width="1920" height="1080" alt="Screenshot (311)" src="https://github.com/user-attachments/assets/844b442a-d077-4140-83c7-7db14650f09a" />
+
+
+
 # 🚀 SNIPE Blockchain – Frontend Technical Assessment
 
 A responsive React.js dashboard for shipment tracking with authentication, data table, dynamic routing, and TailwindCSS UI.  
