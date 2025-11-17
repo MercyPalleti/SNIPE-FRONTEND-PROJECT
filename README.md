@@ -1,71 +1,94 @@
-# Getting Started with Create React App
+# 🚀 SNIPE Blockchain – Frontend Technical Assessment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive React.js dashboard for shipment tracking with authentication, data table, dynamic routing, and TailwindCSS UI.  
+This project is built exactly according to the technical requirements in the assessment.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📌 Live Demo
+🔗 (https://snipe-frontend-project.vercel.app/)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Tech Stack
+- **React.js (Create React App)**
+- **React Router**
+- **TailwindCSS**
+- **Axios**
+- **Local Mock API (JSON file)**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 📦 Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### ✅ **1. Authentication (No Backend)**
+- Simple login page  
+- Accepts any credentials  
+- Redirects to Dashboard  
 
-### `npm run build`
+### ✅ **2. Dashboard**
+- Summary Cards:  
+  - Total Shipments  
+  - In Transit  
+  - Delivered  
+  - Delayed  
+- Fully searchable shipments table  
+- Sortable columns  
+- Pagination-ready structure  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### ✅ **3. Shipment Details Page**
+- Dynamic routing using React Router  
+- Shipment timeline (Ordered → Delivered)  
+- Product image  
+- Last 5 log events  
+- Status badge  
+- ETA display  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### ✅ **4. Mock API**
+- Data loaded from:  
+  `public/api/shipments.json`
+- Includes:
+  - Loading state  
+  - Error state  
+  - Clean API fetch flow  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### ✅ **5. UI/UX**
+- Fully responsive  
+- TailwindCSS  
+- Component-based architecture  
+- Clean folder structure  
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📁 Project Directory Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-"# SNIPE-FRONTEND-PROJECT" 
+```bash
+snipe-frontend/
+│
+├── public/
+│   └── api/
+│       └── shipments.json
+│
+├── src/
+│   ├── components/
+│   │   ├── Card.jsx
+│   │   ├── Loader.jsx
+│   │   ├── StatusBadge.jsx
+│   │   └── Timeline.jsx
+│   │
+│   ├── pages/
+│   │   ├── Login.jsx
+│   │   ├── Dashboard.jsx
+│   │   └── ShipmentDetails.jsx
+│   │
+│   ├── utils/
+│   │   └── fetcher.js
+│   │
+│   ├── App.jsx
+│   ├── index.js
+│   └── index.css
+│
+├── tailwind.config.js
+├── postcss.config.js
+├── package.json
+└── README.md
